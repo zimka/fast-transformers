@@ -13,8 +13,8 @@ jobs:
   test:
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8]
-        pytorch-version: [1.6, 1.7, 1.8, 1.9]
+        python-version: [3.7]
+        pytorch-version: [1.9]
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt install -y nvidia-cuda-toolkit nvidia-cuda-toolkit-gcc
