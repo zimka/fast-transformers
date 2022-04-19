@@ -29,4 +29,5 @@ jobs:
       - run: conda install -y -c pytorch pytorch=${{ matrix.pytorch-version }}
       - run: python setup.py build_ext --inplace
       - run: pip install -e .
+      - run: pip install numpy
       - run: python -m unittest discover -s $GITHUB_WORKSPACE/tests -v
